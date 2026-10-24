@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "baseline_test": {
+    "cer": 0.05920580853352456,
+    "wer": 0.1363040629095675,
+    "exact_line_accuracy": 0.408203125,
+    "samples": 512,
+    "loss": 10.868056878447533
+  },
+  "finetuned_test": {
+    "cer": 0.22808354248834709,
+    "wer": 0.3816076889471385,
+    "exact_line_accuracy": 0.02734375,
+    "samples": 512,
+    "loss": 1.9949353467673063
+  },
+  "selected_epoch": 1,
+  "selection_metric": "validation CER",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 2.740332539307413,
+      "validation": {
+        "cer": 0.19025956649719025,
+        "wer": 0.3299874529485571,
+        "exact_line_accuracy": 0.046875,
+        "samples": 256,
+        "loss": 1.808678813278675
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.3523931435157914,
+      "validation": {
+        "cer": 0.22986352689322986,
+        "wer": 0.40526976160602257,
+        "exact_line_accuracy": 0.02734375,
+        "samples": 256,
+        "loss": 1.383712537586689
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.0371341755161385,
+      "validation": {
+        "cer": 0.28418517527428416,
+        "wer": 0.4847344207444584,
+        "exact_line_accuracy": 0.00390625,
+        "samples": 256,
+        "loss": 1.2151146829128265
+      }
+    }
+  ],
+  "elapsed_seconds": 692.7065484523773,
+  "real_page_metrics": null,
+  "limitations": [
+    "Line metrics only, not real-page accuracy.",
+    "Base checkpoint already trained on IAM.",
+    "Heuristic page segmentation supports clean single-column pages."
+  ]
+}

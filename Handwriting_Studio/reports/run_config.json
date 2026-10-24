@@ -1,0 +1,17 @@
+{
+  "dataset": "Teklia/IAM-line",
+  "dataset_revision": "fbdad97500ce54635c0d1ba306bf535cb40656cf",
+  "base_model": "microsoft/trocr-small-handwritten",
+  "model_revision": "b4648cfa171985a6745f37ddd637e98c0da958ac",
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 8,
+  "learning_rate": 1e-05,
+  "encoder_frozen": true,
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "precision": "float32",
+  "train_size": "all",
+  "validation_size": 256,
+  "test_size": 512
+}

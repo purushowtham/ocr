@@ -1,0 +1,6 @@
+torch>=2.6,<3
+transformers==4.57.1
+gradio==5.49.1
+sentencepiece==0.2.2
+opencv-python-headless>=4.12,<5
+Pillow>=11,<13

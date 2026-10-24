@@ -1,0 +1,191 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792143822.737086    3368 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792143830.260827    3368 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+Downloading IAM and TrOCR...
+
+Generating train split:   0%|          | 0/6482 [00:00<?, ? examples/s]
+Generating train split:   2%|▏         | 100/6482 [00:00<00:07, 864.96 examples/s]
+Generating train split:  19%|█▊        | 1200/6482 [00:00<00:00, 6183.30 examples/s]
+Generating train split:  37%|███▋      | 2400/6482 [00:00<00:00, 8465.85 examples/s]
+Generating train split:  54%|█████▍    | 3500/6482 [00:00<00:00, 8526.87 examples/s]
+Generating train split:  71%|███████   | 4600/6482 [00:00<00:00, 9130.10 examples/s]
+Generating train split: 100%|██████████| 6482/6482 [00:00<00:00, 9933.50 examples/s]
+Generating train split: 100%|██████████| 6482/6482 [00:00<00:00, 8615.11 examples/s]
+
+Generating validation split:   0%|          | 0/976 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 976/976 [00:00<00:00, 12045.72 examples/s]
+
+Generating test split:   0%|          | 0/2915 [00:00<?, ? examples/s]
+Generating test split:  31%|███       | 900/2915 [00:00<00:00, 8283.68 examples/s]
+Generating test split:  86%|████████▌ | 2500/2915 [00:00<00:00, 11267.58 examples/s]
+Generating test split: 100%|██████████| 2915/2915 [00:00<00:00, 10752.31 examples/s]
+Some weights of VisionEncoderDecoderModel were not initialized from the model checkpoint at microsoft/trocr-small-handwritten and are newly initialized: ['encoder.pooler.dense.bias', 'encoder.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Exported train 6482
+Exported validation 256
+Exported test 512
+`loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+baseline_test 8 / 512 elapsed 6 s
+baseline_test 136 / 512 elapsed 49 s
+baseline_test 264 / 512 elapsed 89 s
+baseline_test 392 / 512 elapsed 131 s
+baseline_test {'cer': 10.416860882036572, 'wer': 10.732415902140673, 'exact_line_accuracy': 0.0, 'samples': 512, 'loss': 12.607901632785797}
+Epoch 1/3: 8/6482 lines, loss=12.9811, elapsed=170s
+Epoch 1/3: 264/6482 lines, loss=8.5008, elapsed=179s
+Epoch 1/3: 520/6482 lines, loss=7.7711, elapsed=187s
+Epoch 1/3: 776/6482 lines, loss=7.3429, elapsed=195s
+Epoch 1/3: 1032/6482 lines, loss=7.0279, elapsed=204s
+Epoch 1/3: 1288/6482 lines, loss=6.8174, elapsed=212s
+Epoch 1/3: 1544/6482 lines, loss=6.6371, elapsed=220s
+Epoch 1/3: 1800/6482 lines, loss=6.4787, elapsed=229s
+Epoch 1/3: 2056/6482 lines, loss=6.3215, elapsed=237s
+Epoch 1/3: 2312/6482 lines, loss=6.1684, elapsed=245s
+Epoch 1/3: 2568/6482 lines, loss=6.0338, elapsed=253s
+Epoch 1/3: 2824/6482 lines, loss=5.9071, elapsed=261s
+Epoch 1/3: 3080/6482 lines, loss=5.7825, elapsed=270s
+Epoch 1/3: 3336/6482 lines, loss=5.6804, elapsed=278s
+Epoch 1/3: 3592/6482 lines, loss=5.5879, elapsed=286s
+Epoch 1/3: 3848/6482 lines, loss=5.4968, elapsed=294s
+Epoch 1/3: 4104/6482 lines, loss=5.4125, elapsed=303s
+Epoch 1/3: 4360/6482 lines, loss=5.3271, elapsed=311s
+Epoch 1/3: 4616/6482 lines, loss=5.2433, elapsed=319s
+Epoch 1/3: 4872/6482 lines, loss=5.1621, elapsed=328s
+Epoch 1/3: 5128/6482 lines, loss=5.0958, elapsed=336s
+Epoch 1/3: 5384/6482 lines, loss=5.0220, elapsed=345s
+Epoch 1/3: 5640/6482 lines, loss=4.9585, elapsed=353s
+Epoch 1/3: 5896/6482 lines, loss=4.8907, elapsed=361s
+Epoch 1/3: 6152/6482 lines, loss=4.8231, elapsed=370s
+Epoch 1/3: 6408/6482 lines, loss=4.7593, elapsed=378s
+epoch_1_validation 8 / 256 elapsed 0 s
+epoch_1_validation 136 / 256 elapsed 8 s
+epoch_1_validation {'cer': 0.47203639282847204, 'wer': 0.588874947720619, 'exact_line_accuracy': 0.0, 'samples': 256, 'loss': 2.939883403480053}
+Saved best checkpoint; epoch 1
+Epoch 2/3: 8/6482 lines, loss=2.6185, elapsed=396s
+Epoch 2/3: 264/6482 lines, loss=3.2140, elapsed=404s
+Epoch 2/3: 520/6482 lines, loss=3.1274, elapsed=412s
+Epoch 2/3: 776/6482 lines, loss=3.1106, elapsed=420s
+Epoch 2/3: 1032/6482 lines, loss=3.0862, elapsed=428s
+Epoch 2/3: 1288/6482 lines, loss=3.0341, elapsed=437s
+Epoch 2/3: 1544/6482 lines, loss=3.0088, elapsed=445s
+Epoch 2/3: 1800/6482 lines, loss=2.9506, elapsed=453s
+Epoch 2/3: 2056/6482 lines, loss=2.9065, elapsed=461s
+Epoch 2/3: 2312/6482 lines, loss=2.8592, elapsed=470s
+Epoch 2/3: 2568/6482 lines, loss=2.8056, elapsed=478s
+Epoch 2/3: 2824/6482 lines, loss=2.7501, elapsed=486s
+Epoch 2/3: 3080/6482 lines, loss=2.6923, elapsed=494s
+Epoch 2/3: 3336/6482 lines, loss=2.6529, elapsed=502s
+Epoch 2/3: 3592/6482 lines, loss=2.6065, elapsed=510s
+Epoch 2/3: 3848/6482 lines, loss=2.5478, elapsed=518s
+Epoch 2/3: 4104/6482 lines, loss=2.4934, elapsed=527s
+Epoch 2/3: 4360/6482 lines, loss=2.4326, elapsed=535s
+Epoch 2/3: 4616/6482 lines, loss=2.3903, elapsed=543s
+Epoch 2/3: 4872/6482 lines, loss=2.3420, elapsed=551s
+Epoch 2/3: 5128/6482 lines, loss=2.2990, elapsed=559s
+Epoch 2/3: 5384/6482 lines, loss=2.2631, elapsed=568s
+Epoch 2/3: 5640/6482 lines, loss=2.2269, elapsed=576s
+Epoch 2/3: 5896/6482 lines, loss=2.1920, elapsed=584s
+Epoch 2/3: 6152/6482 lines, loss=2.1591, elapsed=592s
+Epoch 2/3: 6408/6482 lines, loss=2.1258, elapsed=600s
+epoch_2_validation 8 / 256 elapsed 0 s
+epoch_2_validation 136 / 256 elapsed 7 s
+epoch_2_validation {'cer': 0.4649005441084649, 'wer': 0.5370138017565872, 'exact_line_accuracy': 0.0, 'samples': 256, 'loss': 1.45029903575778}
+Saved best checkpoint; epoch 2
+Epoch 3/3: 8/6482 lines, loss=1.4454, elapsed=618s
+Epoch 3/3: 264/6482 lines, loss=1.2885, elapsed=626s
+Epoch 3/3: 520/6482 lines, loss=1.1944, elapsed=634s
+Epoch 3/3: 776/6482 lines, loss=1.1858, elapsed=642s
+Epoch 3/3: 1032/6482 lines, loss=1.2072, elapsed=650s
+Epoch 3/3: 1288/6482 lines, loss=1.2251, elapsed=658s
+Epoch 3/3: 1544/6482 lines, loss=1.2240, elapsed=666s
+Epoch 3/3: 1800/6482 lines, loss=1.2264, elapsed=674s
+Epoch 3/3: 2056/6482 lines, loss=1.2274, elapsed=682s
+Epoch 3/3: 2312/6482 lines, loss=1.2298, elapsed=690s
+Epoch 3/3: 2568/6482 lines, loss=1.2356, elapsed=698s
+Epoch 3/3: 2824/6482 lines, loss=1.2338, elapsed=706s
+Epoch 3/3: 3080/6482 lines, loss=1.2309, elapsed=714s
+Epoch 3/3: 3336/6482 lines, loss=1.2217, elapsed=722s
+Epoch 3/3: 3592/6482 lines, loss=1.2155, elapsed=730s
+Epoch 3/3: 3848/6482 lines, loss=1.2083, elapsed=737s
+Epoch 3/3: 4104/6482 lines, loss=1.2077, elapsed=745s
+Epoch 3/3: 4360/6482 lines, loss=1.2016, elapsed=753s
+Epoch 3/3: 4616/6482 lines, loss=1.1872, elapsed=761s
+Epoch 3/3: 4872/6482 lines, loss=1.1890, elapsed=769s
+Epoch 3/3: 5128/6482 lines, loss=1.1849, elapsed=777s
+Epoch 3/3: 5384/6482 lines, loss=1.1830, elapsed=785s
+Epoch 3/3: 5640/6482 lines, loss=1.1806, elapsed=793s
+Epoch 3/3: 5896/6482 lines, loss=1.1814, elapsed=801s
+Epoch 3/3: 6152/6482 lines, loss=1.1790, elapsed=809s
+Epoch 3/3: 6408/6482 lines, loss=1.1652, elapsed=817s
+epoch_3_validation 8 / 256 elapsed 0 s
+epoch_3_validation 136 / 256 elapsed 7 s
+epoch_3_validation {'cer': 0.4753367228614753, 'wer': 0.5692179004600586, 'exact_line_accuracy': 0.0, 'samples': 256, 'loss': 1.2286277655512094}
+Saved best checkpoint; epoch 2
+finetuned_test 8 / 512 elapsed 0 s
+finetuned_test 136 / 512 elapsed 7 s
+finetuned_test 264 / 512 elapsed 14 s
+finetuned_test 392 / 512 elapsed 21 s
+finetuned_test {'cer': 0.47960738615991394, 'wer': 0.5591961555264308, 'exact_line_accuracy': 0.001953125, 'samples': 512, 'loss': 1.7611971572041512}
+TRAINING COMPLETE {
+  "status": "completed",
+  "baseline_test": {
+    "cer": 10.416860882036572,
+    "wer": 10.732415902140673,
+    "exact_line_accuracy": 0.0,
+    "samples": 512,
+    "loss": 12.607901632785797
+  },
+  "finetuned_test": {
+    "cer": 0.47960738615991394,
+    "wer": 0.5591961555264308,
+    "exact_line_accuracy": 0.001953125,
+    "samples": 512,
+    "loss": 1.7611971572041512
+  },
+  "selected_epoch": 2,
+  "selection_metric": "validation CER",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 4.745267096657475,
+      "validation": {
+        "cer": 0.47203639282847204,
+        "wer": 0.588874947720619,
+        "exact_line_accuracy": 0.0,
+        "samples": 256,
+        "loss": 2.939883403480053
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.1173008961447297,
+      "validation": {
+        "cer": 0.4649005441084649,
+        "wer": 0.5370138017565872,
+        "exact_line_accuracy": 0.0,
+        "samples": 256,
+        "loss": 1.45029903575778
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.1637040934272844,
+      "validation": {
+        "cer": 0.4753367228614753,
+        "wer": 0.5692179004600586,
+        "exact_line_accuracy": 0.0,
+        "samples": 256,
+        "loss": 1.2286277655512094
+      }
+    }
+  ],
+  "elapsed_seconds": 861.0549819469452,
+  "real_page_metrics": null,
+  "limitations": [
+    "Line metrics only, not real-page accuracy.",
+    "Base checkpoint already trained on IAM.",
+    "Heuristic page segmentation supports clean single-column pages."
+  ]
+}
+ALL RESULTS ARCHIVE: /content/ocr2_complete.zip
